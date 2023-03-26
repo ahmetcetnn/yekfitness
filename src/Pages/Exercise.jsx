@@ -5,7 +5,7 @@ function Exercise() {
   return (
     <>
     <Navbar/>
-    <h1>Exercise Pagez</h1>
+    <h1>Exercise Page</h1>
       
     </>
   )
