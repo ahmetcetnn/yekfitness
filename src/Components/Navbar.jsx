@@ -1,6 +1,14 @@
 import React from 'react'
-
+import { Link, useNavigate } from 'react-router-dom'
 function Navbar() {
+
+  const navigate =useNavigate()
+  const handleExit = () => {
+    
+    localStorage.removeItem('user');
+   
+    navigate('/login');}
+
   return (
     // Header Section
     <>
@@ -8,17 +16,17 @@ function Navbar() {
       {/* Header Container */}
     <div className="container flex items-center justify-between space-x-8 lg:space-x-16 ">
       {/* LOGO */}
-      <h1 className=" lg:text-4xl text-3x1 font-bold text-gray-400 text-transparent bg-gradient-to-r bg-clip-text from-slate-500 to-slate-200">yekFit</h1>
+      <h1 className=" lg:text-4xl text-3x1 font-bold text-gray-400 text-transparent bg-gradient-to-r bg-clip-text from-slate-500 to-slate-200"><Link to="/">yekFit </Link></h1>
      
       {/* Navigation */}
       <nav className="flex justify-between flex-1">
         {/* MENU */}
         <div className="hidden md:flex py-6 items-start text-xs lg:text-base space-x-4 lg:space-x-8">
-          <a className="hover:text-blue-600 hover:cursor-pointer transition duration-100">exercise</a>
-          <a className="hover:text-blue-600 hover:cursor-pointer transition duration-100">nutrition</a>
+          <a className="hover:text-blue-600 hover:cursor-pointer transition duration-100"><Link to="/exercise">exercise </Link></a>
+          <a className="hover:text-blue-600 hover:cursor-pointer transition duration-100"><Link to ="/nutrition">nutrition </Link></a>
           <a className="hover:text-blue-600 hover:cursor-pointer transition duration-100">Progress</a>
-          <a className="hover:text-blue-600 hover:cursor-pointer transition duration-100">Blog</a>
-          <a className="hover:text-blue-600 hover:cursor-pointer transition duration-100">EXIT</a>
+          <a className="hover:text-blue-600 hover:cursor-pointer transition duration-100">Schedule</a>
+          <a className="hover:text-blue-600 hover:cursor-pointer transition duration-100" onClick={handleExit}>EXIT</a>
           <form>
           <div className="border-r px-4  py-1 border-red-400">
             <input type="text" 

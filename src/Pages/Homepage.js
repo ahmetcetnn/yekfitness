@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
+import { Link } from "react-router-dom";
 function Homepage() {
   return (
     <>
@@ -18,7 +19,7 @@ function Homepage() {
           <div className="container">
             
             <h1 className=" text-3xl lg:text-5xl text-white group-hover:mb-1 duration-500 ">
-              START YOUR NEW LIFE
+            START YOUR NEW LIFE 
             </h1>
             <p className="text-white group-hover:mb-2 duration-500 w-3/4 text-sm lg:text-base lg:w-2/3">
             "Fitness is not about being better than someone else. It's about
@@ -31,7 +32,7 @@ function Homepage() {
               {/* INFO */}
               <div className="flex space-x-2 items-center cursor-pointer ">
                 <button className="text-gray-100 uppercase w-32 border-solid bg-opacity-5 md:text-xs lg:text-lg hover:text-red-600 duratin-500">
-                  start now
+                <Link to ="/exercise"> start now </Link> 
                 </button>
                 
               </div>
