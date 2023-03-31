@@ -29,10 +29,10 @@ function Login() {
     <div className="container flex flex-col items-center   ">
       
       <form onSubmit={handleLogin}>
-        <div className="justify-center text-center items-center flex flex-col text-black">
+        <div className="justify-center text-center items-center flex flex-col text-white">
           <br></br>
           <input
-            className="border-solid border border-x-gray-900 w-96 h-12 mt-56 rounded-md"
+            className="border-solid border text-black border-x-gray-900 w-96 h-12 mt-56 rounded-md"
             type="email"
             placeholder="Enter Your E-Mail."
             value={email}
