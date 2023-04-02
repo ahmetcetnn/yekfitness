@@ -11,14 +11,8 @@ setCalorise(e.target.value)
  }
  const getMealData = () =>{
 
- } 
- const getRecipes = async () =>{
-    
-  const api =  await fetch (`https://api.spoonacular.com/recipes/findByNutrients?minCarbs=10&maxCarbs=50&number=2`)
-  const data = await api.json();
-  setPopular(data.recipes)
-
-} 
+ }
+ 
   return (
     <div>
         <Navbar/>
