@@ -28,12 +28,7 @@ function Navbar() {
           <a className="hover:text-blue-600 hover:cursor-pointer transition duration-100">Schedule</a>
           <a className="hover:text-blue-600 hover:cursor-pointer transition duration-100" onClick={handleExit}>EXIT</a>
           <form>
-          <div className="border-r px-4  py-1 border-red-400">
-            <input type="text" 
-            className="bg-transparent border-b border-red-500 w-24 lg:w-44 focus:outline-none" 
-            placeholder="Search.."></input>
-            <button className="font-semibold"><i className="fas fa-search"/></button>
-          </div>
+          
 
         </form>
         </div>
