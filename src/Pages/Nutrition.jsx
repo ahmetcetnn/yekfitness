@@ -20,7 +20,6 @@ setCalorise(e.target.value)
 
 } 
   return (
-    <>
     <div>
         <Navbar/>
       <div className='container w-60 text-black flex flex-col'>
@@ -37,7 +36,6 @@ setCalorise(e.target.value)
 
       
    </div>
-   </>
   )
 }
 
