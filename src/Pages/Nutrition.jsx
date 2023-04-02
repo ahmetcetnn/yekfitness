@@ -14,7 +14,7 @@ setCalorise(e.target.value)
  } 
  const getRecipes = async () =>{
     
-  const api =  await fetch (`https://api.spoonacular.com/recipes/findByNutrients?maxCarbs=50?apiKey=3311761e9882409381dfbb8ca1e01378&number=3`)
+  const api =  await fetch (`https://api.spoonacular.com/recipes/findByNutrients?minCarbs=10&maxCarbs=50&number=2`)
   const data = await api.json();
   setPopular(data.recipes)
 
@@ -33,8 +33,6 @@ setCalorise(e.target.value)
         <button
         className='mt-4 text-center items-center justify-center text-black bg-white rounded-sm border-solid border-white'>Get Daily Meal Plan</button> 
       </div>
-
-      
    </div>
   )
 }
