@@ -26,16 +26,16 @@ function Login() {
   };
 
   return (
-    <div className=" flex flex-col items-center bg-cover bg-fixed w-full h-full"
+    <div className=" flex flex-col items-center lg:bg-cover bg-right bg-repeat-y bg-fixed w-full "
     style={{ backgroundImage: "url('https://c4.wallpaperflare.com/wallpaper/787/610/414/muscle-press-pose-athlete-workout-hd-wallpaper-preview.jpg')" }}>
     
         
       <form onSubmit={handleLogin}>
-        <div className="justify-center text-center  items-center flex flex-col text-white"
+        <div className="justify-center text-center h-screen items-center flex flex-col text-white"
         >
           <br></br>
           <input
-            className="border-solid border text-black border-x-gray-900 w-96 h-12 mt-56 rounded-md z-10"
+            className="border-solid border text-black border-x-gray-900 lg:w-96 lg:h-12 w-72  rounded-md z-10"
             type="email"
             placeholder="Enter Your E-Mail."
             value={email}
@@ -43,13 +43,13 @@ function Login() {
           ></input>
           <input
             type="password"
-            className="border-solid border border-x-gray-900 w-96 h-12 rounded-md mt-2"
+            className="border-solid border border-x-gray-900 lg:w-96 lg:h-12 w-72 rounded-md mt-2"
             placeholder="Enter Your Password."
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           ></input>
           <button
-            className="border-solid border cursor-pointer bg-white text-slate-800 mt-2 w-96 h-12 rounded-md"
+            className="border-solid border cursor-pointer bg-white text-slate-800 mt-2 lg:w-96 lg:h-12 w-72 rounded-md"
             disabled={!email || !password}
             type="submit"
           >
