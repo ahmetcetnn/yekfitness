@@ -26,13 +26,16 @@ function Login() {
   };
 
   return (
-    <div className="container flex flex-col items-center   ">
-      
+    <div className=" flex flex-col items-center bg-cover bg-fixed w-full h-full"
+    style={{ backgroundImage: "url('https://c4.wallpaperflare.com/wallpaper/787/610/414/muscle-press-pose-athlete-workout-hd-wallpaper-preview.jpg')" }}>
+    
+        
       <form onSubmit={handleLogin}>
-        <div className="justify-center text-center items-center flex flex-col text-white">
+        <div className="justify-center text-center items-center flex flex-col text-white"
+        >
           <br></br>
           <input
-            className="border-solid border text-black border-x-gray-900 w-96 h-12 mt-56 rounded-md"
+            className="border-solid border text-black border-x-gray-900 w-96 h-12 mt-56 rounded-md z-10"
             type="email"
             placeholder="Enter Your E-Mail."
             value={email}
