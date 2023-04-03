@@ -26,12 +26,12 @@ function Login() {
   };
 
   return (
-    <div className=" flex flex-col items-center lg:bg-cover bg-right bg-repeat-y bg-fixed w-full "
+    <div className=" flex flex-col items-center justify-center lg:bg-cover sm:bg-right sm:bg-repeat-y   "
     style={{ backgroundImage: "url('https://c4.wallpaperflare.com/wallpaper/787/610/414/muscle-press-pose-athlete-workout-hd-wallpaper-preview.jpg')" }}>
     
         
       <form onSubmit={handleLogin}>
-        <div className="justify-center text-center h-screen items-center flex flex-col text-white"
+        <div className="justify-center text-center bg-cover h-screen items-center flex flex-col text-white"
         >
           <br></br>
           <input
