@@ -31,7 +31,7 @@ function Login() {
     
         
       <form onSubmit={handleLogin}>
-        <div className="justify-center text-center items-center flex flex-col text-white"
+        <div className="justify-center text-center h-full items-center flex flex-col text-white"
         >
           <br></br>
           <input
