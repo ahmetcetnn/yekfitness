@@ -5,18 +5,18 @@ import Navbar from '../Components/Navbar'
 
 
 function Exercise() {
-  const options = {
-    method: 'GET',
-    headers: {
-      'X-RapidAPI-Key': 'SIGN-UP-FOR-KEY',
-      'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
-    }
-  };
+  // const options = {
+  //   method: 'GET',
+  //   headers: {
+  //     'X-RapidAPI-Key': 'SIGN-UP-FOR-KEY',
+  //     'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
+  //   }
+  // };
   
-  fetch('https://exercisedb.p.rapidapi.com/exercises/bodyPartList', options)
-    .then(response => response.json())
-    .then(response => console.log(response))
-    .catch(err => console.error(err));
+  // fetch('https://exercisedb.p.rapidapi.com/exercises/bodyPartList', options)
+  //   .then(response => response.json())
+  //   .then(response => console.log(response))
+  //   .catch(err => console.error(err));
 
 
 

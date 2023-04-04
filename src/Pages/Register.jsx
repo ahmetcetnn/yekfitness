@@ -30,7 +30,7 @@ function Register() {
     
         
       <form onSubmit={handleLogin}>
-        <div className="justify-center text-center h-screen items-center flex flex-col text-white"
+        <div className="justify-center text-center h-screen items-center flex flex-col text-black"
         >
           <br></br>
           <input
@@ -62,7 +62,7 @@ function Register() {
           
             
           
-            <p>You have an account? <Link to="/login" className='hover:text-sky-700'> Log In</Link></p>
+            <p className='text-white'>You have an account? <Link to="/login" className='hover:text-sky-700'> Log In</Link></p>
       </div>
       
       </form>

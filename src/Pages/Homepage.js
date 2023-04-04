@@ -5,7 +5,7 @@ function Homepage() {
   return (
     <>
     <Navbar/>
-    <section className="h-64 md:h-96  lg:h-128 group relative">
+    <section className="h-64 md:h-96  lg:h-144 group relative">
         {/* Hero Image */}
         <img
           src="https://blog.n11.com/wp-content/uploads/2015/09/fitness-nedir-ne-ise-yarar-800x461.jpg"
@@ -43,11 +43,11 @@ function Homepage() {
       {/* Movies section */}
       <section className="py-10 bg-black  ">
         {/* Movies content */}
-        <div className=" flex ml-10 space-x-8">
+        <div className=" lg:flex sm:flex-row lg:ml-10 lg:space-x-8 sm:h-2/3">
           {/* sol taraf */}
           {/* titles */}
 
-          <div className=" basis-2/3 ">
+          <div className=" lg:basis-4/6 sm:basis-1/3 ">
             {/* images container */}
             <div className="flex flex-wrap ">
               {/* image 1 */}
@@ -163,7 +163,7 @@ function Homepage() {
           </div>
           {/* sag taraf */}
           <div className="basis1/3 text-slate-400 flex flex-col">
-            <div className="h-72 my-72">
+            <div className=" lg:my-72 sm:mt-64">
             <h2 className="lg:text-3xl md:text-xl sm:text-base text-center justify-center  whitespace-pre-wrap ">
               You won't find an unhealthy, 
             </h2>

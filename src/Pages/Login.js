@@ -43,7 +43,7 @@ function Login() {
           ></input>
           <input
             type="password"
-            className="border-solid border border-x-gray-900 lg:w-96 lg:h-12 w-72 rounded-md mt-2"
+            className="border-solid border text-black border-x-gray-900 lg:w-96 lg:h-12 w-72 rounded-md mt-2"
             placeholder="Enter Your Password."
             value={password}
             onChange={(e) => setPassword(e.target.value)}
