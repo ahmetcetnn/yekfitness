@@ -5,17 +5,27 @@ import { useState,useEffect } from 'react'
 
 
 function Exercise() {
+  const options = {
+    method: 'GET',
+    headers: {
+      'X-RapidAPI-Key': 'e9c142f000msh2a8e878a6fa6dcdp142d29jsn185cfccec5c4',
+      'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
+    }
+  };
+  
+
   useEffect(() => {
     getExercise()
   },[])
   const getExercise = async () =>{
-    const api =await fetch(`https://api.spoonacular.com/recipes/random?apiKey=44940024d3514860b8b98dd1e7393cbc&number=45`)
+    const api =await fetch('https://exercisedb.p.rapidapi.com/exercises/bodyPartList', options)
     const data = await api.json()
     console.log(data)
    }
    const [exerciseData,setExerciseData] =useState([])
 
-
+   
+ 
 
 
 

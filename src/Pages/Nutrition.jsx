@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom'
 
 
 function Nutrition() {
+
+  
   useEffect(() => {
     getMealData()
   },[])
