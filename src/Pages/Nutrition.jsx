@@ -33,14 +33,14 @@ setCalorise(e.target.value)
         <button
         className='mt-4 text-center items-center justify-center text-black bg-white rounded-sm border-solid border-white'>Get Daily Meal Plan</button> 
       </div>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="container grid lg:grid-cols-3 lg:gap-7 grid-cols-1 md:items-center  justify-center">
       {mealData.map((recipe)=>{
           return(
-            <div className='text-white ' key={recipe.id}>
+            <div className='text-white mt-6' key={recipe.id}>
              
               <Link to= {'/recipe/'+recipe.id}>
-              <p>{recipe.title}</p> 
-              <img src={recipe.image} alt={recipe.title}/>
+              <p className='whitespace-pre-wrap text-center'>{recipe.title}</p> 
+              <img className='container lg:w-60 w-52 rounded-md  items-center justify-center' src={recipe.image} alt={recipe.title}/>
              
               </Link>
             
