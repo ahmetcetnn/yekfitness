@@ -9,6 +9,7 @@ import Register from './Pages/Register';
 import firebase from "./firesbase"
 import Exercise from './Pages/Exercise';
 import Nutrition from './Pages/Nutrition';
+import Recipe from './Pages/Recipe';
 
 
 
@@ -33,6 +34,7 @@ const {currentUser} = useContext(AuthContext)
       <Route path='register' element={<Register/>}/>
       <Route path="exercise" element={<Exercise/>}/>
       <Route path='nutrition' element={<Nutrition/>}/>
+      <Route path="/recipe/:name" element={<Recipe/>}/>
       </Routes>
     
       

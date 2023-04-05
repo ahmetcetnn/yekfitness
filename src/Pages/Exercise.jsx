@@ -1,25 +1,19 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
-
+import { useState,useEffect } from 'react'
 
 
 
 function Exercise() {
-  // const options = {
-  //   method: 'GET',
-  //   headers: {
-  //     'X-RapidAPI-Key': 'SIGN-UP-FOR-KEY',
-  //     'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
-  //   }
-  // };
-  
-  // fetch('https://exercisedb.p.rapidapi.com/exercises/bodyPartList', options)
-  //   .then(response => response.json())
-  //   .then(response => console.log(response))
-  //   .catch(err => console.error(err));
-
-
-
+  useEffect(() => {
+    getExercise()
+  },[])
+  const getExercise = async () =>{
+    const api =await fetch(`https://api.spoonacular.com/recipes/random?apiKey=44940024d3514860b8b98dd1e7393cbc&number=45`)
+    const data = await api.json()
+    console.log(data)
+   }
+   const [exerciseData,setExerciseData] =useState([])
 
 
 

@@ -1,6 +1,10 @@
 import React,{useEffect, useState} from 'react'
 import Navbar from '../Components/Navbar'
 import { Link } from 'react-router-dom'
+
+
+
+
 function Nutrition() {
   useEffect(() => {
     getMealData()
@@ -15,8 +19,8 @@ function Nutrition() {
   const [calories,setCalorise]=useState(2000)
 
  const handleChange = (e) => {
-setCalorise(e.target.value)
- }
+  setCalorise(e.target.value)
+  }
 
  
   return (
