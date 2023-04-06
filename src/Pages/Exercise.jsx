@@ -25,18 +25,32 @@ function Exercise() {
   return (
     <>
     <Navbar/>
-    <div className='flex flex-row gap-4 w-full'>
-      <button className='w-48 rounded-md h-5 text-black bg-cyan-600'>Shoulder</button>
-      <button className='w-48 rounded-md h-5 text-black bg-cyan-600'>Arms</button>
-      <button className='w-48 rounded-md h-5 text-black bg-cyan-600'>Chest</button>
-      <button className='w-48 rounded-md h-5 text-black bg-cyan-600'>Back</button>
-      <button className='w-48 rounded-md h-5 text-black bg-cyan-600'>Legs</button>
-      <button className='w-48 rounded-md h-5 text-black bg-cyan-600'>Core</button>
-      <button className='w-48 rounded-md h-5 text-black bg-cyan-600'>Cardio</button>
+    <div className='container flex flex-row gap-4 w-full'>
+      <button className='w-24 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'
+
+      >Shoulder</button>
+      <button className='w-24 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'
+
+      >Arms</button>
+      <button className='w-24 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'
+
+      >Chest</button>
+      <button className='w-24 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'
+
+      >Back</button>
+      <button className='w-24 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'
+
+      >Legs</button>
+      <button className='w-24 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'
+
+      >Core</button>
+      <button className='w-24 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'
+      
+      >Cardio</button>
     </div>
     <div className="container ">
 
-    <div className='container grid lg:grid-cols-3 lg:gap-7 grid-cols-1 md:items-center  justify-center'>
+    <div className='container mt-8 grid lg:grid-cols-3 lg:gap-7 grid-cols-1 md:items-center  justify-center'>
         {exerciseList.map(exercise => (
           <div className='container grid lg:grid-cols-3 lg:gap-7  md:items-center text-white justify-center' key={exercise.id}>
             <h4 className='text-white uppercase'>{exercise.name}</h4>
