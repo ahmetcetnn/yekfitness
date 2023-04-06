@@ -10,12 +10,12 @@ import firebase from "./firesbase"
 import Exercise from './Pages/Exercise';
 import Nutrition from './Pages/Nutrition';
 import Recipe from './Pages/Recipe';
-import Core from './Pages/Core';
-import Chest from './Pages/Chest'
-import Legs from './Pages/Legs'
-import Arms from './Pages/Arms'
-import Shoulder from './Pages/Shoulder'
-import Back from './Pages/Back'
+import Core from './Pages/Links/Core';
+import Chest from './Pages/Links/Chest'
+import Legs from './Pages/Links/Legs'
+import Arms from './Pages/Links/Arms'
+import Shoulder from './Pages/Links/Shoulder'
+import Back from './Pages/Links/Back'
 
 
 

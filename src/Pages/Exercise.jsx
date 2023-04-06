@@ -1,19 +1,11 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
 import { useState,useEffect } from 'react'
-import { Link } from 'react-router-dom';
-
-
+import Routers from '../Components/Routers';
+import { options } from '../Components/Options';
 function Exercise() {
-  const [exerciseList, setExerciseList] = useState([]);
-  const options = {
-    method: 'GET',
-    headers: {
-      'X-RapidAPI-Key': '4873c1c780mshc01834047e55702p1b8219jsnd79dd09da5c9',
-      'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
-    }
-  };
 
+  const [exerciseList, setExerciseList] = useState([]);
   useEffect(() => {
     fetch('https://exercisedb.p.rapidapi.com/exercises', options)
       .then(response => response.json())
@@ -25,27 +17,7 @@ function Exercise() {
   return (
     <>
     <Navbar/>
-    <div className='container flex flex-row gap-4 w-full'>
-      <button className='w-24 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'
-
-      ><Link to ="/shoulder">Shoulder </Link></button>
-      <button className='w-24 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'
-
-      ><Link to ="/arms">Arms</Link></button>
-      <button className='w-24 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'
-
-      ><Link to ="/chest">Chest</Link></button>
-      <button className='w-24 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'
-
-      ><Link to ="/back">Back</Link></button>
-      <button className='w-24 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'
-
-      ><Link to ="/legs">Legs</Link></button>
-      <button className='w-24 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'
-
-      ><Link to ="/core">Core</Link></button>
-      
-    </div>
+    <Routers/>
     <div className="container ">
 
     <div className='container mt-8 grid lg:grid-cols-3 lg:gap-7 grid-cols-1 md:items-center  justify-center'>
