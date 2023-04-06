@@ -183,6 +183,13 @@ function Homepage() {
           </div>
         </div>
       </section>
+      <footer className="text-white">
+        <ul className="flex flex-row justify-around uppercase">
+          <li>twitter</li>
+          <li>github</li>
+          <li>linkedin</li>
+        </ul>
+      </footer>
     </>
   );
 }

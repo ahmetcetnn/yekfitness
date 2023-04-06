@@ -10,6 +10,12 @@ import firebase from "./firesbase"
 import Exercise from './Pages/Exercise';
 import Nutrition from './Pages/Nutrition';
 import Recipe from './Pages/Recipe';
+import Core from './Pages/Core';
+import Chest from './Pages/Chest'
+import Legs from './Pages/Legs'
+import Arms from './Pages/Arms'
+import Shoulder from './Pages/Shoulder'
+import Back from './Pages/Back'
 
 
 
@@ -35,6 +41,12 @@ const {currentUser} = useContext(AuthContext)
       <Route path="exercise" element={<Exercise/>}/>
       <Route path='nutrition' element={<Nutrition/>}/>
       <Route path="/recipe/:name" element={<Recipe/>}/>
+      <Route path="/legs" element={<Legs/>}/>
+      <Route path="/chest" element={<Chest/>}/>
+      <Route path="/core" element={<Core/>}/>
+      <Route path="/back" element={<Back/>}/>
+      <Route path="/shoulder" element={<Shoulder/>}/>
+      <Route path="/arms" element={<Arms/>}/>
       </Routes>
     
       

@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
 import { useState,useEffect } from 'react'
-
+import { Link } from 'react-router-dom';
 
 
 function Exercise() {
@@ -28,25 +28,23 @@ function Exercise() {
     <div className='container flex flex-row gap-4 w-full'>
       <button className='w-24 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'
 
-      >Shoulder</button>
+      ><Link to ="/shoulder">Shoulder </Link></button>
       <button className='w-24 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'
 
-      >Arms</button>
+      ><Link to ="/arms">Arms</Link></button>
       <button className='w-24 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'
 
-      >Chest</button>
+      ><Link to ="/chest">Chest</Link></button>
       <button className='w-24 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'
 
-      >Back</button>
+      ><Link to ="/back">Back</Link></button>
       <button className='w-24 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'
 
-      >Legs</button>
+      ><Link to ="/legs">Legs</Link></button>
       <button className='w-24 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'
 
-      >Core</button>
-      <button className='w-24 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'
+      ><Link to ="/core">Core</Link></button>
       
-      >Cardio</button>
     </div>
     <div className="container ">
 
