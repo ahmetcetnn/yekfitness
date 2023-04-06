@@ -5,26 +5,14 @@ import { useState,useEffect } from 'react'
 
 
 function Exercise() {
-  const options = {
-    method: 'GET',
-    headers: {
-      'X-RapidAPI-Key': 'e9c142f000msh2a8e878a6fa6dcdp142d29jsn185cfccec5c4',
-      'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
-    }
-  };
+ const fetchData = async(url,options)=> {
+  const response =await fetch(url,options);
+  const data=await response.json();
+  return data;
+}
   
 
-  useEffect(() => {
-    getExercise()
-  },[])
-  const getExercise = async () =>{
-    const api =await fetch('https://exercisedb.p.rapidapi.com/exercises/bodyPartList', options)
-    const data = await api.json()
-    console.log(data)
-   }
-   const [exerciseData,setExerciseData] =useState([])
-
-   
+  
  
 
 
