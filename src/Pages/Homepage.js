@@ -31,7 +31,7 @@ function Homepage() {
               
               {/* INFO */}
               <div className="flex space-x-2 items-center cursor-pointer ">
-                <button className="text-gray-100 uppercase w-32 border-solid bg-opacity-5 md:text-xs lg:text-lg hover:text-red-600 duratin-500">
+                <button className="text-gray-100 uppercase w-32 border-solid bg-opacity-5 md:text-xs lg:text-lg hover:text-red-600 duration-500">
                 <Link to ="/exercise"> start now </Link> 
                 </button>
                 
