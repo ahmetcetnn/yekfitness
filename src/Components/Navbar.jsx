@@ -25,7 +25,7 @@ function Navbar() {
           <a className="hover:text-blue-600 hover:cursor-pointer transition duration-100"><Link to="/exercise">exercise </Link></a>
           <a className="hover:text-blue-600 hover:cursor-pointer transition duration-100"><Link to ="/nutrition">nutrition </Link></a>
           <a className="hover:text-blue-600 hover:cursor-pointer transition duration-100">Progress</a>
-          <a className="hover:text-blue-600 hover:cursor-pointer transition duration-100">Schedule</a>
+          <a className="hover:text-blue-600 hover:cursor-pointer transition duration-100"><Link to ="/schedule">Schedule</Link></a>
           <a className="hover:text-blue-600 hover:cursor-pointer transition duration-100" onClick={handleExit}>EXIT</a>
           <form>
           

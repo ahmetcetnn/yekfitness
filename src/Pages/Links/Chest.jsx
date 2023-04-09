@@ -28,10 +28,15 @@ function Chest() {
 
     <div className='container mt-8 grid lg:grid-cols-3 lg:gap-7 grid-cols-1 md:items-center  justify-center'>
         {exerciseList.map(exercise => (
-          <div className='container grid lg:grid-cols-3 lg:gap-7  md:items-center text-white justify-center' key={exercise.id}>
-            <h4 className='text-white uppercase'>{exercise.name}</h4>
-            <img className='container lg:w-32 w-28 rounded-md  items-center justify-center' src={exercise.gifUrl} alt={exercise.bodyPart}/>
+          <div className='container relative grid lg:grid-cols-3 lg:gap-7  md:items-center text-white justify-center' key={exercise.id}>
+          <h4 className='text-white uppercase'>{exercise.name}</h4>
+          <img className='container block opacity-100 transition-all  hover:opacity-30 lg:w-32 w-20 rounded-md   items-center justify-center' src={exercise.gifUrl} alt={exercise.bodyPart}/>
+     
+     
+          <div className='hover:opacity-100 absolute top-1/2 left-1/2 opacity-0 text-center items-center  -translate-x-1/2 -translate-y-1/2'> 
+            <button className='text-white w-24 rounded-sm border-solid ml-6 bg-slate-600 whitespace-nowrap opacity-80 '>ADD MOVE </button> 
             </div>
+          </div>
         ))}
       </div>
     </div>
