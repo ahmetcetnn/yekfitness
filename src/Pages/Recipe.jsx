@@ -30,7 +30,7 @@ return ( <div className='text-white'>
     
       <div className='text-white container items-center flex flex-col '>
         <h2>{details.title}</h2>
-        <img className='w-128 items-center justify-center ' src={details.image} alt=""/>
+        <img className='w-128 rounded-md items-center justify-center ' src={details.image} alt=""/>
       
       <div className='px-10 flex flex-col'>
       <button

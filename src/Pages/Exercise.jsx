@@ -24,7 +24,7 @@ function Exercise() {
         {exerciseList.map(exercise => (
           <div className='container grid lg:grid-cols-3 lg:gap-7  md:items-center text-white justify-center' key={exercise.id}>
             <h4 className='text-white uppercase'>{exercise.name}</h4>
-            <img className='container lg:w-32 w-20 rounded-md  items-center justify-center' src={exercise.gifUrl} alt={exercise.bodyPart}/>
+            <img className='container lg:w-32 w-20 rounded-md   items-center justify-center' src={exercise.gifUrl} alt={exercise.bodyPart}/>
             
             </div>
         ))}
