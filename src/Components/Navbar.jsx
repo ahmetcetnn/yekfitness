@@ -45,7 +45,7 @@ function Navbar() {
       </nav>
        {/* Mobile Menu */}
        <div className="block md:hidden mr-14">
-        <div className="space-y-1 cursor-pointer">
+        <div  className="space-y-1 cursor-pointer">
           <div className="bg-slate-500 w-8 h-1 rounded-full"></div>
           <div className="bg-slate-500 w-8 h-1 rounded-full"></div>
           <div className="bg-slate-500 w-8 h-1 rounded-full"></div>
