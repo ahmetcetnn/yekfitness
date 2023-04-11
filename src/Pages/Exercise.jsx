@@ -26,11 +26,8 @@ function Exercise() {
 
 
           <div className='container relative grid lg:grid-cols-3 lg:gap-7  md:items-center text-white justify-center' key={exercise.id}>
-            <div className='flex flex-col'>
+            
             <h4 className='text-white uppercase'>{exercise.name}</h4>
-            <button className='text-white text-xs bg-blue-500'>{exercise.bodyPart}</button>
-            <button className='text-white text-xs bg-blue-500 mt-1'>{exercise.target}</button>
-            </div>
             <img className='container block opacity-100 transition-all  hover:opacity-30 lg:w-32 w-52 rounded-md   items-center justify-center' src={exercise.gifUrl} alt={exercise.bodyPart}/>
        
        
