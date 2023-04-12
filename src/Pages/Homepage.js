@@ -1,6 +1,9 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
 import { Link } from "react-router-dom";
+import { AiFillTwitterCircle } from "react-icons/ai";
+import {BsGithub} from "react-icons/bs"
+import {FaLinkedinIn} from "react-icons/fa"
 function Homepage() {
   return (
     <>
@@ -184,10 +187,10 @@ function Homepage() {
         </div>
       </section>
       <footer className="text-white">
-        <ul className="flex flex-row justify-around uppercase">
-          <li>twitter</li>
-          <li>github</li>
-          <li>linkedin</li>
+        <ul className="flex flex-row justify-center  uppercase">
+          <li className="mr-4"><AiFillTwitterCircle/></li>
+          <li className="mr-4"> <BsGithub/></li>
+          <li><FaLinkedinIn/></li>
         </ul>
       </footer>
     </>

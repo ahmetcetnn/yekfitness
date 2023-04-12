@@ -18,6 +18,7 @@ import Shoulder from './Pages/Links/Shoulder'
 import Back from './Pages/Links/Back'
 import { GlobalProvider } from './Context/GlobalContext';
 import Schedule from './Pages/Schedule';
+import Progess from './Pages/Progess';
 
 
 function App() {
@@ -49,6 +50,7 @@ const {currentUser} = useContext(AuthContext)
       <Route path="/shoulder" element={<Shoulder/>}/>
       <Route path="/arms" element={<Arms/>}/>
       <Route path="/schedule" element={<Schedule/>}/>
+      <Route path="/progress"element={<Progess/>}/>
       </Routes>
     
       
