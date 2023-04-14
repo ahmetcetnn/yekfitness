@@ -48,4 +48,3 @@ function Progess() {
 }
 
 export default Progess
-<
