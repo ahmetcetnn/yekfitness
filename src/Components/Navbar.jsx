@@ -24,7 +24,7 @@ function Navbar() {
         <div className="hidden md:flex py-6 items-start text-xs lg:text-base space-x-4 lg:space-x-8">
           <a className="hover:text-blue-600 hover:cursor-pointer transition duration-100"><Link to="/exercise">exercise </Link></a>
           <a className="hover:text-blue-600 hover:cursor-pointer transition duration-100"><Link to ="/nutrition">nutrition </Link></a>
-          <a className="hover:text-blue-600 hover:cursor-pointer transition duration-100">Progress</a>
+          <a className="hover:text-blue-600 hover:cursor-pointer transition duration-100"><Link to="/progress">Progress</Link></a>
           <a className="hover:text-blue-600 hover:cursor-pointer transition duration-100"><Link to ="/schedule">Schedule</Link></a>
           <a className="hover:text-blue-600 hover:cursor-pointer transition duration-100" onClick={handleExit}>EXIT</a>
           <form>
