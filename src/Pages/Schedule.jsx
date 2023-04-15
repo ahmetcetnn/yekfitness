@@ -23,8 +23,8 @@ function Schedule() {
         <img className='container block opacity-100 transition-all  hover:opacity-30 lg:w-32 w-52 rounded-md   items-center justify-center' src={exercise.gifUrl} alt={exercise.bodyPart}/>
    
    
-        <div className='hover:opacity-100 absolute top-1/2 left-1/2 opacity-0 text-center items-center transform -translate-x-1/2 -translate-y-1/2'> 
-          <button className='text-white w-32 rounded-sm border-solid  bg-slate-600 whitespace-nowrap opacity-80 'onClick={() => handleRemoveMovieFromWatchlist(exercise.id)}>Remove Move </button> 
+        <div className='hover:opacity-100 absolute top-1/2 left-1/2 opacity-0 text-center items-center  -translate-x-1/2 -translate-y-1/2'> 
+          <button className='text-white w-32 rounded-sm border-solid   bg-slate-600 whitespace-nowrap opacity-80 'onClick={() => handleRemoveMovieFromWatchlist(exercise.id)}>Remove Move </button> 
           </div>
         </div>
       ))}
