@@ -24,27 +24,40 @@ function Progess() {
   return (
     <>
     <Navbar/>
-    <div className="container relative mt-8 grid lg:grid-cols-3 lg:gap-7 grid-cols-1 md:items-center justify-center">
-      <div className="container relative grid lg:grid-cols-3 lg:gap-7 items-center text-center md:items-center text-black justify-center">
-        <select className="text-center items-center justify-center text-black uppercase w-48" onChange={handleSelectExercise}>
-          <option className='w-36 text-center items-center' value="">Add an exercise</option>
-          {exerciseList.map((exercise) => (
-            <option key={exercise.id} value={exercise.id}>
-              {exercise.name}
-            </option>
-          ))}
-        </select>
-
-        {selectedExercise && (
-          <>
-            <img className="container block opacity-100 transition-all  hover:opacity-30 lg:w-32 w-52 rounded-md   items-center justify-center" src={selectedExercise.gifUrl} alt={selectedExercise.bodyPart} />
-            <div>{/* Burada ağırlık takibi için gerekli olan bileşenleri ekleyebilirsiniz */}</div>
-          </>
-        )}
-      </div>
+    <div className="container relative mt-8 grid lg:grid-cols-3 lg:gap-7 grid-cols-1 text-center items-center justify-center">
+  <div className="container relative grid lg:grid-cols-3 lg:gap-7 items-center text-center md:items-center text-black justify-center">
+    <div className="text-center items-center uppercase w-48">
+      <p>Select an exercise</p>
+      <select className="text-center items-center justify-center text-black w-full" onChange={handleSelectExercise}>
+        <option className='text-center items-center' value="">Select an exercise</option>
+        {exerciseList.map((exercise) => (
+          <option key={exercise.id} value={exercise.id}>
+            {exercise.name}
+          </option>
+        ))}
+      </select>
+      {selectedExercise && (
+        <>
+          <img className="container block opacity-100 transition-all  hover:opacity-30 lg:w-32 w-52 rounded-md items-center justify-center" src={selectedExercise.gifUrl} alt={selectedExercise.bodyPart} />
+          <div>
+            <select className="text-center items-center justify-center text-black uppercase w-48">
+              <option className='w-36 text-center items-center' value="">Select weight</option>
+              <option className='w-36 text-center items-center' value="5kg">5kg</option>
+              <option className='w-36 text-center items-center' value="8kg">8kg</option>
+              <option className='w-36 text-center items-center' value="10kg">10kg</option>
+              <option className='w-36 text-center items-center' value="15kg">15kg</option>
+              <option className='w-36 text-center items-center' value="20kg">20kg</option>
+              <option className='w-36 text-center items-center' value="25kg">25kg</option>
+              <option className='w-36 text-center items-center' value="30kg">30kg</option>
+              <option className='w-36 text-center items-center' value="35kg">35kg</option>
+              <option className='w-36 text-center items-center' value="40kg">40kg</option>
+              <option className='w-36 text-center items-center' value="45kg">45kg</option>
+            </select>
+          </div>
+        </>
+      )}
     </div>
-    </>
-  );
-}
-
+  </div>
+</div>
+</> )}
 export default Progess
