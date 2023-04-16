@@ -1,31 +1,33 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { BiDumbbell } from 'react-icons/bi';
 function Navbar() {
   
   const navigate =useNavigate()
-  const handleExit = () => {
-    
-    localStorage.removeItem('user');
-   
-    navigate('/login');}
 
+    const handleExit = () => {
+      localStorage.removeItem('user');
+      navigate('/login');}
+      
+    const [toggleMenu, setToggleMenu] = useState(false);
   return (
     // Header Section
     <>
-    <header className="bg-black py-3 pl-10 lg:py-6 text-gray-400 font-serif uppercase">
+    <header className="bg-black py-3 pl-10 lg:py-6 text-gray-400 font-serif ">
       {/* Header Container */}
     <div className="container flex items-center justify-between space-x-8 lg:space-x-16 ">
       {/* LOGO */}
-      <h1 className=" lg:text-4xl text-3x1 font-bold text-gray-400 text-transparent bg-gradient-to-r bg-clip-text from-slate-500 to-slate-200"><Link to="/">yekFit </Link></h1>
+      <h1 className=" lg:text-4xl text-3x1 font-bold text-gray-400 text-transparent bg-gradient-to-r bg-clip-text from-slate-500 to-slate-200"><Link to="/">YEKFIT </Link></h1>
      
       {/* Navigation */}
       <nav className="flex justify-between flex-1">
         {/* MENU */}
         <div className="hidden md:flex py-6 items-start text-xs lg:text-base space-x-4 lg:space-x-8">
-          <a className="hover:text-blue-600 hover:cursor-pointer transition duration-100"><Link to="/exercise">exercise </Link></a>
-          <a className="hover:text-blue-600 hover:cursor-pointer transition duration-100"><Link to ="/nutrition">nutrition </Link></a>
-          <a className="hover:text-blue-600 hover:cursor-pointer transition duration-100"><Link to="/progress">Progress</Link></a>
-          <a className="hover:text-blue-600 hover:cursor-pointer transition duration-100"><Link to ="/schedule">Schedule</Link></a>
+          <a className="hover:text-blue-600 hover:cursor-pointer transition duration-100"><Link to="/exercise">EXERCISE </Link></a>
+          <a className="hover:text-blue-600 hover:cursor-pointer transition duration-100"><Link to ="/nutrition">NUTRITION </Link></a>
+          <a className="hover:text-blue-600 hover:cursor-pointer transition duration-100"><Link to="/progress">PROGRESS</Link></a>
+          <a className="hover:text-blue-600 hover:cursor-pointer transition duration-100"><Link to ="/schedule">SCHEDULE</Link></a>
           <a className="hover:text-blue-600 hover:cursor-pointer transition duration-100" onClick={handleExit}>EXIT</a>
           <form>
           
@@ -38,18 +40,27 @@ function Navbar() {
         
         {/* Signup Area */}
         <div className="hidden md:text-xs md:flex items-center space-x-4 lg:space-x-8 lg:text-base">
-         <Link to="/login"> <a className="cursor-pointer md:text-sm">Login</a></Link>
-         <Link to="/register" ><a className="bg-red-600 px-3 py-1 hover:bg-rose-600 hover:text-gray-600 cursor-pointer transition duration-100 rounded-sm whitespace-nowrap">Sign Up</a></Link>
+         <Link to="/login"> <a className="cursor-pointer md:text-sm">LOGIN</a></Link>
+         <Link to="/register" ><a className="bg-red-600 px-3 py-1 hover:bg-rose-600 hover:text-gray-600 cursor-pointer transition duration-100 rounded-sm whitespace-nowrap">SIGN UP</a></Link>
         </div>
         </div>
       </nav>
        {/* Mobile Menu */}
-       <div className="block md:hidden mr-14">
-        <div  className="space-y-1 cursor-pointer">
-          <div className="bg-slate-500 w-8 h-1 rounded-full"></div>
-          <div className="bg-slate-500 w-8 h-1 rounded-full"></div>
-          <div className="bg-slate-500 w-8 h-1 rounded-full"></div>
-        </div>
+        <div className="lg:hidden ">
+        <GiHamburgerMenu color="#fff" fontSize={27} onClick={() => setToggleMenu(true)} />
+
+        {toggleMenu && (
+          <div className="fixed top-0 left-0 w-full h-full bg-slate-900 transition-shadow z-50">
+            <BiDumbbell fontSize={27} className="absolute top-4 right-5" onClick={() => setToggleMenu(false)} />
+            <ul className="text-center text-stone-400 mb-4 text-3xl items-center">
+              <li><a href="#home" onClick={() => setToggleMenu(false)}>Home</a></li>
+              <li><a href="#about" onClick={() => setToggleMenu(false)}>About</a></li>
+              <li><a href="#menu" onClick={() => setToggleMenu(false)}>Menu</a></li>
+              <li><a href="#awards" onClick={() => setToggleMenu(false)}>Awards</a></li>
+              <li><a href="#contact" onClick={() => setToggleMenu(false)}>Contact</a></li>
+            </ul>
+          </div>
+        )}
       </div>
     </div>
     
