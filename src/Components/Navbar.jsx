@@ -50,14 +50,14 @@ function Navbar() {
         <GiHamburgerMenu color="#fff" fontSize={27} onClick={() => setToggleMenu(true)} />
 
         {toggleMenu && (
-          <div className="fixed top-0 left-0 w-full h-full bg-slate-900 transition-shadow z-50 flex flex-col  justify-center ">
+          <div className="fixed top-0 left-0 w-full h-full bg-black transition-shadow z-50 flex flex-col  justify-center ">
             <BiDumbbell fontSize={27} className="absolute top-4 right-5" onClick={() => setToggleMenu(false)} />
             <ul className="text-center text-stone-400  text-3xl flex flex-col justify-center items-center">
               <li><a href="/exercise" onClick={() => setToggleMenu(false)}>Exercise</a></li>
-              <li><a href="/nutrition" onClick={() => setToggleMenu(false)}>Nutrition</a></li>
-              <li><a href="/progress" onClick={() => setToggleMenu(false)}>Progress</a></li>
-              <li><a href="/schedule" onClick={() => setToggleMenu(false)}>Schedule</a></li>
-              <li><a href="/exit" onClick={() => setToggleMenu(false)}>Exit</a></li>
+              <li className='mt-4'><a href="/nutrition" onClick={() => setToggleMenu(false)}>Nutrition</a></li>
+              <li className='mt-4'><a href="/progress" onClick={() => setToggleMenu(false)}>Progress</a></li>
+              <li className='mt-4'><a href="/schedule" onClick={() => setToggleMenu(false)}>Schedule</a></li>
+              <li className='mt-4 cursor-pointer'onClick={handleExit}>Exit</li>
             </ul>
           </div>
         )}

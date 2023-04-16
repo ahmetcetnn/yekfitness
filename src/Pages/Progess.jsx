@@ -29,9 +29,9 @@ function Progess() {
     <div className="text-center items-center uppercase w-48">
       <p>Select an exercise</p>
       <select className="text-center items-center justify-center text-black w-full" onChange={handleSelectExercise}>
-        <option className='text-center items-center' value="">Select an exercise</option>
+        <option className='text-center items-center uppercase' value="">Select An Exercise</option>
         {exerciseList.map((exercise) => (
-          <option key={exercise.id} value={exercise.id}>
+          <option className='uppercase' key={exercise.id} value={exercise.id}>
             {exercise.name}
           </option>
         ))}

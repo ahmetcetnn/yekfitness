@@ -26,7 +26,7 @@ function Login() {
   };
 
   return (
-    <div className=" flex flex-col items-center justify-center lg:bg-cover sm:bg-right sm:bg-repeat-y   "
+    <div className=" flex flex-col items-center justify-center lg:bg-cover bg-right bg-no-repeat    "
     style={{ backgroundImage: "url('https://c4.wallpaperflare.com/wallpaper/787/610/414/muscle-press-pose-athlete-workout-hd-wallpaper-preview.jpg')" }}>
     
         
@@ -35,7 +35,7 @@ function Login() {
         >
           <br></br>
           <input
-            className="border-solid border text-black border-x-gray-900 lg:w-96 lg:h-12 w-72  rounded-md z-10"
+            className="border-solid border text-black border-x-gray-900 lg:w-96 lg:h-12 w-72  rounded-md z-10 text-center"
             type="email"
             placeholder="Enter Your E-Mail."
             value={email}
@@ -43,7 +43,7 @@ function Login() {
           ></input>
           <input
             type="password"
-            className="border-solid border text-black border-x-gray-900 lg:w-96 lg:h-12 w-72 rounded-md mt-2"
+            className="border-solid border text-black border-x-gray-900 lg:w-96 lg:h-12 w-72 rounded-md mt-2 text-center"
             placeholder="Enter Your Password."
             value={password}
             onChange={(e) => setPassword(e.target.value)}
