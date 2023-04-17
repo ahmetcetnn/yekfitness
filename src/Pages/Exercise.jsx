@@ -21,13 +21,13 @@ function Exercise() {
     <Routers/>
     <div className="container ">
 
-    <div className='container relative mt-8 grid lg:grid-cols-3 lg:gap-7 grid-cols-1 md:items-center  justify-center'>
+    <div className='container relative mt-8 grid lg:grid-cols-3 lg:gap-7 grid-cols-1 md:items-center justify-center'>
         {exerciseList.map(exercise => (
 
 
           <div className='container relative grid lg:grid-cols-3 lg:gap-7  md:items-center text-white justify-center' key={exercise.id}>
             
-            <h4 className='text-white uppercase'>{exercise.name}</h4>
+            <h4 className='text-white text-center items-center uppercase'>{exercise.name}</h4>
             <img className='container block opacity-100 transition-all  hover:opacity-30 lg:w-32 w-52 rounded-md   items-center justify-center' src={exercise.gifUrl} alt={exercise.bodyPart}/>
        
        
