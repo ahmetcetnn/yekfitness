@@ -9,16 +9,16 @@ function Routers() {
  
           <div className='container  flex lg:flex-row flex-col gap-4 w-full'>
             <div className='hidden sm:hidden lg:flex'>
-          <button className='w-24 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'><Link to ="/shoulder">Shoulder </Link></button>
-          <button className='w-24 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'><Link to ="/arms">Arms</Link></button>
-          <button className='w-24 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'><Link to ="/chest">Chest</Link></button>
-          <button className='w-24 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'><Link to ="/back">Back</Link></button>
-          <button className='w-24 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'><Link to ="/legs">Legs</Link></button>
-          <button className='w-24 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'><Link to ="/core">Core</Link></button> </div>
+          <button className='w-24 mr-1 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'><Link to ="/shoulder">Shoulder </Link></button>
+          <button className='w-24 mr-1 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'><Link to ="/arms">Arms</Link></button>
+          <button className='w-24 mr-1 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'><Link to ="/chest">Chest</Link></button>
+          <button className='w-24 mr-1 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'><Link to ="/back">Back</Link></button>
+          <button className='w-24 mr-1 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'><Link to ="/legs">Legs</Link></button>
+          <button className='w-24 mr-1 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'><Link to ="/core">Core</Link></button> </div>
 
-          <div className='flex flex-row lg:ml-40 ml-4 justify-center text-center items-center '>
+          <div className='flex flex-row lg:ml-56 ml-4 justify-center text-center items-center '>
           <div className='relative'>
-            <input type='text'placeholder='Search Move' className='rounded-md items-center  text-center'/>
+            <input type='text'placeholder='Search Move' className='rounded-md items-center text-center'/>
             <button type='submit' className='absolute right-0 top-0 h-full w-8 text-black border-solid rounded-md border-blue-400 hover:text-blue-500'><AiOutlineSearch/></button>
           </div>
           <button className='text-white ml-2 lg:hidden sm:flex' ><BiDumbbell  onClick={() => setToggleMenu(true)} /></button>
