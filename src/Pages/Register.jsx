@@ -48,7 +48,7 @@ function Register() {
             onChange={(e) => setPassword(e.target.value)}
           ></input>
           <button
-            className="border-solid border cursor-pointer bg-white text-slate-800 mt-2 lg:w-96 lg:h-12 w-72 rounded-md"
+            className="border-solid border cursor-pointer bg-blue-600 text-white mt-2 lg:w-96 lg:h-12 w-72 rounded-md"
             disabled={!email || !password}
             type="submit"
           >
@@ -62,7 +62,7 @@ function Register() {
           
             
           
-            <p className='text-white'>You have an account? <Link to="/login" className='hover:text-sky-700'> Log In</Link></p>
+            <p className='text-white'>You have an account? <Link to="/login" className='hover:text-yellow-400'> Log In</Link></p>
       </div>
       
       </form>

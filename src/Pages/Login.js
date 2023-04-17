@@ -43,13 +43,13 @@ function Login() {
           ></input>
           <input
             type="password"
-            className="border-solid border text-black border-x-gray-900 lg:w-96 lg:h-12 w-72 rounded-md mt-2 text-center"
+            className="border-solid border text-black  border-x-gray-900 lg:w-96 lg:h-12 w-72 rounded-md mt-2 text-center"
             placeholder="Enter Your Password."
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           ></input>
           <button
-            className="border-solid border cursor-pointer bg-white text-slate-800 mt-2 lg:w-96 lg:h-12 w-72 rounded-md"
+            className="border-solid border cursor-pointer bg-blue-600 text-white  mt-2 lg:w-96 lg:h-12 w-72 rounded-md"
             disabled={!email || !password}
             type="submit"
           >
@@ -63,7 +63,7 @@ function Login() {
 
           <p>
             Dont you have an account?{" "}
-            <Link to="/register" className="hover:text-sky-700">
+            <Link to="/register" className="hover:text-yellow-400">
               {" "}
               Sign Up
             </Link>
