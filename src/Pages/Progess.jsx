@@ -18,7 +18,7 @@ function Progess() {
   const handleSelectExercise = (event) => {
     const exerciseId = event.target.value;
     const exercise = exerciseList.find((exercise) => exercise.id === exerciseId);
-    setSelectedExercise(exercise);
+    setSelectedExercise((prevSelectedExercises) => [...prevSelectedExercises, exercise]);
   };
 
   return (
