@@ -26,7 +26,7 @@ function Routers() {
           <div className="fixed top-0 left-0 w-full h-full bg-black transition-shadow z-50 flex flex-col  justify-center ">
             <BiDumbbell fontSize={27} className="absolute text-white top-4 right-5" onClick={() => setToggleMenu(false)} />
             <ul className="text-center text-stone-400  text-3xl flex flex-col justify-center items-center">
-              <li><a href="/exercise" onClick={() => setToggleMenu(false)}>Exercise</a></li>
+              
               <li className='mt-4'><a href="/shoulder" onClick={() => setToggleMenu(false)}>Shoulder</a></li>
               <li className='mt-4'><a href="/chest" onClick={() => setToggleMenu(false)}>Chest</a></li>
               <li className='mt-4'><a href="/back" onClick={() => setToggleMenu(false)}>Back</a></li>
