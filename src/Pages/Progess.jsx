@@ -34,7 +34,7 @@ function Progess() {
           <option className='uppercase' key={exercise.id} value={exercise.id}>
             {exercise.name}
           </option>
-        ))}
+        ))}n
       </select>
       {selectedExercise && (
         <>
