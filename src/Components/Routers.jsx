@@ -6,14 +6,7 @@ function Routers() {
 
   const [toggleMenu, setToggleMenu] = useState(false);
 
-  const SearchExercise = () => {
-    const [search,setSearch] = useState('')
-    const handleSearch = async () => {
-      if(search) {
-        const exerciseData = await fetchData()
-      }
-    }
-  }
+ 
 
 
 
