@@ -14,7 +14,7 @@ function Exercise() {
       .catch(err => console.error(err));
       
   }, []);
-  const {addMoveToMovelist,watchlist}= useContext(GlobalContext);
+  const {addMoveToMovelist}= useContext(GlobalContext);
   return (
     <>
     <Navbar/>
