@@ -15,12 +15,12 @@ function Routers() {
  
           <div className='container  flex lg:flex-row flex-col gap-4 w-full'>
             <div className='hidden sm:hidden lg:flex'>
-          <button className='w-24 mr-1 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'><Link to ="/shoulder">Shoulder </Link></button>
-          <button className='w-24 mr-1 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'><Link to ="/arms">Arms</Link></button>
-          <button className='w-24 mr-1 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'><Link to ="/chest">Chest</Link></button>
-          <button className='w-24 mr-1 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'><Link to ="/back">Back</Link></button>
-          <button className='w-24 mr-1 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'><Link to ="/legs">Legs</Link></button>
-          <button className='w-24 mr-1 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'><Link to ="/core">Core</Link></button> </div>
+          <button className='w-24 mr-1 pb-6 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'><Link to ="/shoulder">Shoulder </Link></button>
+          <button className='w-24 mr-1 pb-6 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'><Link to ="/arms">Arms</Link></button>
+          <button className='w-24 mr-1 pb-6 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'><Link to ="/chest">Chest</Link></button>
+          <button className='w-24 mr-1 pb-6 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'><Link to ="/back">Back</Link></button>
+          <button className='w-24 mr-1 pb-6 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'><Link to ="/legs">Legs</Link></button>
+          <button className='w-24 mr-1 pb-6 rounded-md h-5 text-white bg-slate-700 hover:text-blue-500 cursor-pointer'><Link to ="/core">Core</Link></button> </div>
 
           <div className='flex flex-row lg:ml-56 ml-4 justify-center text-center items-center '>
           <div className='relative'>

@@ -40,8 +40,8 @@ function Navbar() {
         
         {/* Signup Area */}
         <div className="hidden md:text-xs md:flex items-center space-x-4 lg:space-x-8 lg:text-base">
-         <Link to="/login"> <a className="cursor-pointer md:text-sm">LOGIN</a></Link>
-         <Link to="/register" ><a className="bg-red-600 px-3 py-1 hover:bg-rose-600 hover:text-gray-600 cursor-pointer transition duration-100 rounded-sm whitespace-nowrap">SIGN UP</a></Link>
+         <Link to="/login"> <a className="cursor-pointer hover:text-blue-600 md:text-sm">LOGIN</a></Link>
+         <Link to="/register" ><a className="bg-red-600 px-3 py-1 hover:bg-rose-600 hover:text-white cursor-pointer transition duration-100 rounded-sm whitespace-nowrap">SIGN UP</a></Link>
         </div>
         </div>
       </nav>
