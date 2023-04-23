@@ -50,9 +50,8 @@ function Progess() {
         <div className="container relative grid lg:grid-cols-3 lg:gap-7 items-center text-center md:items-center text-black justify-center">
           <div className="text-center items-center uppercase w-48">
             <p className='text-white text-center uppercase items-center'>Select an exercise</p>
-            <select className="text-center items-center justify-center text-black w-full" onChange={handleSelectExercise}>
-              <option className='text-center items-center text-white uppercase' value="">Select </option>
-              {exerciseList.map((exercise) => (
+            <select className="text-center items-center uppercase justify-center text-black w-full" onChange={handleSelectExercise}>
+                {exerciseList.map((exercise) => (
                 <option className='uppercase' key={exercise.id} value={exercise.id}>
                   {exercise.name}
                 </option>
