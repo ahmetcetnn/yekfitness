@@ -26,14 +26,14 @@ function Progess() {
   };
 
   const handleSave = () => {
-    // Save selectedExercise and selectedWeight to local storage
+    
     localStorage.setItem('selectedExercise', JSON.stringify(selectedExercise));
     localStorage.setItem('selectedWeight', selectedWeight);
     alert('Data saved successfully!');
   };
 
   useEffect(() => {
-    // Retrieve values from local storage and set as initial values
+  
     const savedExercise = JSON.parse(localStorage.getItem('selectedExercise'));
     const savedWeight = localStorage.getItem('selectedWeight');
     if (savedExercise) {
