@@ -47,7 +47,7 @@ function Progess() {
   return (
     <>
       <Navbar />
-      <div className="container relative mt-8 grid lg:grid-cols-3 lg:gap-7 grid-cols-1 text-center items-center justify-center">
+      <div className="container relative mt-8 grid lg:grid-cols-4 lg:gap-7 grid-cols-1 text-center items-center justify-center">
         <div className="container relative grid lg:grid-cols-3 lg:gap-7 items-center text-center md:items-center text-black justify-center">
           <div className="text-center items-center uppercase w-48">
             <p className='text-white text-center uppercase items-center'>Select an exercise</p>
@@ -76,10 +76,14 @@ function Progess() {
                   </select>
                 </div>
                 <button className='text-white hover:text-blue-800 w-48 border-solid rounded-md bg-blue-400' onClick={handleSave}>SAVE</button>
+               
               </>
+              
             )}
           </div>
+      
         </div>
+         <button className='text-white'>Add New Move</button>
       </div>
 
       
