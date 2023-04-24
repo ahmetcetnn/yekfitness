@@ -24,6 +24,11 @@ function Progess() {
     const weight = event.target.value;
     setSelectedWeight(weight);
   };
+  const handleSave = () => {
+    // Seçili ağırlığı ve hareketi local storage'ye kaydetme
+    localStorage.setItem('selectedExercise', JSON.stringify(selectedExercise));
+    localStorage.setItem('selectedWeight', selectedWeight);
+  };
 
   useEffect(() => {
     // Seçilen egzersiz ve ağırlığı local storage'a kaydetme
@@ -68,7 +73,7 @@ function Progess() {
                     {/* Diğer ağırlık seçenekleri */}
                   </select>
                 </div>
-                <button className='text-white hover:text-blue-800 w-48 border-solid rounded-md bg-blue-400'>SAVE</button>
+                <button className='text-white hover:text-blue-800 w-48 border-solid rounded-md bg-blue-400' onClick={handleSave}>SAVE</button>
               </>
             )}
           </div>
