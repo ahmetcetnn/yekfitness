@@ -44,6 +44,7 @@ function Progess() {
     }
   }, []);
 
+  const [showNewMove, setShowNewMove] = useState(false);
   return (
     <>
       <Navbar />
