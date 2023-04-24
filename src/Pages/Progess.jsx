@@ -4,8 +4,8 @@ import { options } from '../Components/Options';
 
 function Progess() {
   const [exerciseList, setExerciseList] = useState([]);
-  const [selectedExercise, setSelectedExercise] = useState("");
-  const [selectedWeight, setSelectedWeight] = useState("");
+  const [selectedExercise, setSelectedExercise] = useState(null);
+  const [selectedWeight, setSelectedWeight] = useState('');
 
   useEffect(() => {
     fetch('https://exercisedb.p.rapidapi.com/exercises', options)
@@ -24,27 +24,23 @@ function Progess() {
     const weight = event.target.value;
     setSelectedWeight(weight);
   };
+
   const handleSave = () => {
-    // Seçili ağırlığı ve hareketi local storage'ye kaydetme
+    // Save selectedExercise and selectedWeight to local storage
     localStorage.setItem('selectedExercise', JSON.stringify(selectedExercise));
     localStorage.setItem('selectedWeight', selectedWeight);
+    alert('Data saved successfully!');
   };
 
   useEffect(() => {
-    // Seçilen egzersiz ve ağırlığı local storage'a kaydetme
-    localStorage.setItem('selectedExercise', JSON.stringify(selectedExercise));
-    localStorage.setItem('selectedWeight', selectedWeight);
-  }, [selectedExercise, selectedWeight]);
-
-  useEffect(() => {
-    // Sayfa yenilendiğinde localStorage değerlerini kullanarak state'i başlatma
-    const storedExercise = localStorage.getItem('selectedExercise');
-    const storedWeight = localStorage.getItem('selectedWeight');
-    if (storedExercise) {
-      setSelectedExercise(JSON.parse(storedExercise));
+    // Retrieve values from local storage and set as initial values
+    const savedExercise = JSON.parse(localStorage.getItem('selectedExercise'));
+    const savedWeight = localStorage.getItem('selectedWeight');
+    if (savedExercise) {
+      setSelectedExercise(savedExercise);
     }
-    if (storedWeight) {
-      setSelectedWeight(storedWeight);
+    if (savedWeight) {
+      setSelectedWeight(savedWeight);
     }
   }, []);
 
@@ -55,8 +51,8 @@ function Progess() {
         <div className="container relative grid lg:grid-cols-3 lg:gap-7 items-center text-center md:items-center text-black justify-center">
           <div className="text-center items-center uppercase w-48">
             <p className='text-white text-center uppercase items-center'>Select an exercise</p>
-            <select className="text-center items-center uppercase justify-center text-black w-full" onChange={handleSelectExercise}>
-                {exerciseList.map((exercise) => (
+            <select className="text-center items-center uppercase justify-center text-black w-full" onChange={handleSelectExercise} value={selectedExercise?.id || ''}>
+              {exerciseList.map((exercise) => (
                 <option className='uppercase' key={exercise.id} value={exercise.id}>
                   {exercise.name}
                 </option>
@@ -66,10 +62,16 @@ function Progess() {
               <>
                 <img className="container block opacity-100 transition-all  hover:opacity-30 lg:w-32 w-52 rounded-md items-center justify-center" src={selectedExercise.gifUrl} alt={selectedExercise.bodyPart} />
                 <div>
-                  <select className="text-center items-center justify-center text-black uppercase w-48" onChange={handleSelectWeight}>
-                    <option className='w-36 text-center items-center' value="">Select weight</option>
+                  <select className="text-center items-center justify-center text-black uppercase w-48" onChange={handleSelectWeight} value={selectedWeight}>
                     <option className='w-36 text-center items-center' value="5kg">5kg</option>
-                    <option className='w-36 text-center items-center' value="8kg">8kg</option>
+                    <option className='w-36 text-center items-center' value="8kg">7,5kg</option>
+                    <option className='w-36 text-center items-center' value="8kg">10kg</option>
+                    <option className='w-36 text-center items-center' value="8kg">12,5kg</option>
+                    <option className='w-36 text-center items-center' value="8kg">15kg</option>
+                    <option className='w-36 text-center items-center' value="8kg">20kg</option>
+                    <option className='w-36 text-center items-center' value="8kg">22,5kg</option>
+                    <option className='w-36 text-center items-center' value="8kg">25kg</option>
+                    <option className='w-36 text-center items-center' value="8kg">30kg</option>
                     {/* Diğer ağırlık seçenekleri */}
                   </select>
                 </div>
