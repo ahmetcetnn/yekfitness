@@ -68,11 +68,14 @@ function Progess() {
                     {/* Diğer ağırlık seçenekleri */}
                   </select>
                 </div>
+                <button className='text-white hover:text-blue-800 w-48 border-solid rounded-md bg-blue-400'>SAVE</button>
               </>
             )}
           </div>
         </div>
       </div>
+
+      
     </>
   );
 }
