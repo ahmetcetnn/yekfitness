@@ -29,7 +29,7 @@ function Progess() {
     
     localStorage.setItem('selectedExercise', JSON.stringify(selectedExercise));
     localStorage.setItem('selectedWeight', selectedWeight);
-    alert('Data saved successfully!');
+    alert('Move saved successfully!');
   };
 
   useEffect(() => {
@@ -44,7 +44,7 @@ function Progess() {
     }
   }, []);
 
-  const [showNewMove, setShowNewMove] = useState(false);
+  
   
   return (
     <>
@@ -85,9 +85,9 @@ function Progess() {
           </div>
       
         </div>
-         <button className='text-white'>Add New Move</button>
+        
       </div>
-
+                
       
     </>
   );
