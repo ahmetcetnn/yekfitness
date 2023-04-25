@@ -4,8 +4,8 @@ import { options } from '../Components/Options';
 
 function Progess() {
   const [exerciseList, setExerciseList] = useState([]);
-  const [selectedExercise, setSelectedExercise] = useState(null);
-  const [selectedWeight, setSelectedWeight] = useState('');
+  const [selectedExercise, setSelectedExercise] = useState([]);
+  const [selectedWeight, setSelectedWeight] = useState([]);
 
   useEffect(() => {
     fetch('https://exercisedb.p.rapidapi.com/exercises', options)
@@ -45,6 +45,7 @@ function Progess() {
   }, []);
 
   const [showNewMove, setShowNewMove] = useState(false);
+  
   return (
     <>
       <Navbar />
@@ -65,14 +66,14 @@ function Progess() {
                 <div>
                   <select className="text-center items-center justify-center text-black uppercase w-48" onChange={handleSelectWeight} value={selectedWeight}>
                     <option className='w-36 text-center items-center' value="5kg">5kg</option>
-                    <option className='w-36 text-center items-center' value="8kg">7,5kg</option>
-                    <option className='w-36 text-center items-center' value="8kg">10kg</option>
-                    <option className='w-36 text-center items-center' value="8kg">12,5kg</option>
-                    <option className='w-36 text-center items-center' value="8kg">15kg</option>
-                    <option className='w-36 text-center items-center' value="8kg">20kg</option>
-                    <option className='w-36 text-center items-center' value="8kg">22,5kg</option>
-                    <option className='w-36 text-center items-center' value="8kg">25kg</option>
-                    <option className='w-36 text-center items-center' value="8kg">30kg</option>
+                    <option className='w-36 text-center items-center' value="7,5kg">7,5kg</option>
+                    <option className='w-36 text-center items-center' value="10kg">10kg</option>
+                    <option className='w-36 text-center items-center' value="12,5kg">12,5kg</option>
+                    <option className='w-36 text-center items-center' value="15kg">15kg</option>
+                    <option className='w-36 text-center items-center' value="20kg">20kg</option>
+                    <option className='w-36 text-center items-center' value="22,5kg">22,5kg</option>
+                    <option className='w-36 text-center items-center' value="25kg">25kg</option>
+                    <option className='w-36 text-center items-center' value="30kg">30kg</option>
                     {/* Diğer ağırlık seçenekleri */}
                   </select>
                 </div>
