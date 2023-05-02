@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import { Link } from 'react-router-dom'
 import {AiOutlineSearch} from "react-icons/ai"
-import { BiDumbbell } from 'react-icons/bi';
+import { BiDumbbell, BiExpandHorizontal } from 'react-icons/bi';
 function Routers() {
 
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -54,3 +54,4 @@ function Routers() {
 }
 
 export default Routers
+BiExpandHorizontal
