@@ -24,8 +24,12 @@ function Routers() {
 
           <div className='flex flex-row lg:ml-56 ml-4 justify-center text-center items-center '>
           <div className='relative'>
+
+        
             <input type='text'placeholder='Search Move' className='rounded-md items-center text-center'/>
             <button type='submit' className='absolute right-0 top-0 h-full w-8 text-black border-solid rounded-md border-blue-400 hover:text-blue-500'><AiOutlineSearch/></button>
+
+
           </div>
           <button className='text-white ml-2 lg:hidden sm:flex' ><BiDumbbell  onClick={() => setToggleMenu(true)} /></button>
           {toggleMenu && (
