@@ -190,7 +190,7 @@ function Homepage() {
         <ul className="flex flex-row justify-center  uppercase">
           <li className="mr-4"><a href="https://twitter.com/coyoteofwallstr"><AiFillTwitterCircle/></a></li>
           <li className="mr-4"><a href="https://github.com/ahmetcetnn" ><BsGithub/></a></li>
-          <li><a href="https://www.linkedin.com/in/ahmet-%C3%A7etin-1670a6177/"><FaLinkedinIn/></a></li>
+          <li><a href="https://www.linkedin.com/in/ahmetcetnn/"><FaLinkedinIn/></a></li>
         </ul>
       </footer>
     </>
