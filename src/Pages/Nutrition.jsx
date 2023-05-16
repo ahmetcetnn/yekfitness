@@ -51,7 +51,7 @@ function Nutrition() {
       // mealData verisi boş ise "Loading" mesajını göster
       <div className="text-white mt-6 items-center text-center">Loading..</div>
     ) : (
-      // mealData verisi dolu ise verileri haritalayarak bileşenleri oluştur
+      // mealData verisi dolu ise verileri haritalayarak oluştur
       mealData.map(recipe => (
         <div className='text-white mt-6' key={recipe.id}>
           <Link to={'/recipe/' + recipe.id}>
