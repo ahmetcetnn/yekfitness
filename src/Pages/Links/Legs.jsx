@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from '../../Components/Navbar'
 import Routers from '../../Components/Routers'
-import { options } from '../../Components/Options'
 import { useState,useEffect,useContext } from 'react'
 import { GlobalContext } from '../../Context/GlobalContext'
 function Legs() {
