@@ -2,7 +2,6 @@ import React from 'react'
 import Navbar from '../../Components/Navbar'
 import Routers from '../../Components/Routers'
 import { useState,useEffect,useContext } from 'react'
-import { options } from '../../Components/Options'
 import { GlobalContext } from '../../Context/GlobalContext'
 
 function Arms() {
